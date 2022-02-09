@@ -5,8 +5,8 @@ async function getInfo (inputText) {
     var myJson = await response.json();
 
     const h2 = document.createElement('p');
-    console.log(myJson.drinks)
-    const text = document.createTextNode(myJson.);
+    console.log(myJson['drinks'][1]['strDrink'])
+    const text = document.createTextNode(myJson['drinks'][1]['strDrink']);
     console.log(text)
     const print = document.getElementById('ausgabe');
     h2.appendChild(text);
@@ -17,7 +17,7 @@ function knopf() {
   getInfo(bila);
 }
 
-//userAction();
+
 
 function clearFilters() {
 
