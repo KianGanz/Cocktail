@@ -1,26 +1,7 @@
-async function getInfo (inputText) {
-
-  const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + inputText);
-
-    var myJson = await response.json();
-    const h2 = document.createElement('p');
-    console.log(myJson['drinks'][1]['strDrink'])
-    const text = document.createTextNode(myJson['drinks'][1]['strDrink']);
-    console.log(text)
-    const print = document.getElementById('ausgabe');
-    h2.appendChild(text);
-    print.appendChild(h2);
-  }
-function knopf() {
-  bila = document.getElementById("search").value;
-  getInfo(bila);
-}
-
-
-
-function clearFilters() {
-
-     document.getElementById("clearButton").value = "";
-}
-
-
+function pic 
+let zahl = Math.ceil(Math.random() * 8);
+let imgf = "<img id=imgleft src=./picture/"+ zahl + ".png>";
+let imgl = "<img id=imgright src=./picture/"+ zahl + ".png>";
+let giv = document.getElementById('bild');
+giv.insertAdjacentHTML("beforeend", "imgf");
+giv.insertAdjacentHTML("beforeend", "imgl");
