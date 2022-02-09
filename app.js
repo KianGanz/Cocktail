@@ -3,7 +3,6 @@ async function getInfo (inputText) {
   const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + inputText);
 
     var myJson = await response.json();
-
     const h2 = document.createElement('p');
     console.log(myJson['drinks'][1]['strDrink'])
     const text = document.createTextNode(myJson['drinks'][1]['strDrink']);
