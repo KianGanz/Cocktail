@@ -3,9 +3,10 @@ async function getInfo (inputText) {
   const response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + inputText);
 
     var myJson = await response.json();
+    var muJSon = my
 
     const h2 = document.createElement('p');
-    console.log(myJson)
+    console.log(myJson.drinks)
     const text = document.createTextNode(myJson.drinks);
     console.log(text)
     const print = document.getElementById('ausgabe');
@@ -23,9 +24,5 @@ function clearFilters() {
 
      document.getElementById("clearButton").value = "";
 }
-var realConsoleLog = console.log;
-console.log = function () {
-    var message = [].join.call(arguments, " ");
-    $(".output").text(message);
-    realConsoleLog.apply(console, arguments);
-};
+
+
