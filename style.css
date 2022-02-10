@@ -5,11 +5,8 @@ color: rgb(0, 0, 0);
 
 button{
   background-color: transparent;
-  display: flex;
-  align-content: center;
-  justify-content: right;
-  align-items: center;
-  -ms-flex-item-align: center;
+  text-align: center;
+  font-size: 2rem;
 }
 a{
   text-decoration: inherit;
@@ -32,4 +29,33 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: 100% 100%;
+}
+#bild{
+  position: relative;
+    bottom: 0;
+    top: 10rem;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    background-color: transparent;
+}
+#bild2{
+  position: relative;
+    bottom: 0;
+    top: 10rem;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+  }
+#midbar{
+  display:flex;
+justify-content: space-between;
+}
+#köpfe{
+  display: flex;
+  position: relative;
+  top: 5rem;
+  width: 25rem;
+  justify-content: center;
+  flex-direction: column;
 }
