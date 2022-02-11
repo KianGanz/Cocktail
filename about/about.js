@@ -80,7 +80,7 @@ function backWriter() {
     nana = document.getElementById("back").innerHTML = text.charAt(q) + nana;
     setTimeout(backWriter, 200);
   } else {
-    document.getElementById("back").innerHTML = "<button><a href='./../index.html'>Back to Page</a></button>"
+    document.getElementById("back").innerHTML = "<a href='./../index.html'>Back to Page</a>"
   }
 }
 

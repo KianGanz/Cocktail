@@ -6,9 +6,19 @@ body {
     background-size: 100% 100%;
 }
 
-#ausgabe {
+#outprint {
  color:white; 
 }
+
+.drinkImage {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  border-radius: 8px;
+  padding: 5px;
+  height: 5rem;
+}
+
 a {
   text-decoration: inherit;
   color:inherit;

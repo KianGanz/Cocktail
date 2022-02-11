@@ -15,7 +15,7 @@ async function randomDrink() {
     if (key === "strDrinkThumb") {
       let h = document.createElement('p');
       let texti = document.createTextNode(key + ": ");
-      let pic = "<img src=" + myJson['drinks'][0][key] + " style=height:5rem;>"
+      let pic = "<img src=" + myJson['drinks'][0][key] + " style=height:10rem; class=drinkImage>"
       h.appendChild(texti);
       h.insertAdjacentHTML("beforeend", pic);
       print.appendChild(h)
