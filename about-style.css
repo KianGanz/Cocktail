@@ -16,12 +16,6 @@ a:hover {
   text-decoration: inherit;
 }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
 p{
   color:#00ff00;
   font-family:courier;
@@ -33,5 +27,5 @@ background-color:#181818;
 button {
   background-color:#181818;
   border: none;
-  color: whitesmoke;
+  color: #00ff00;
 }

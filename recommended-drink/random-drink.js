@@ -14,9 +14,9 @@ async function randomDrink() {
   for (var key in myJson['drinks'][0]) {
     if (key === "strDrinkThumb") {
       let h = document.createElement('p');
-      let texti = document.createTextNode(key + ": ");
+
       let pic = "<img src=" + myJson['drinks'][0][key] + " style=height:10rem; class=drinkImage>"
-      h.appendChild(texti);
+
       h.insertAdjacentHTML("beforeend", pic);
       print.appendChild(h)
       console.log(myJson['drinks'][0][key])
@@ -32,21 +32,6 @@ async function randomDrink() {
   }
   let printus = document.getElementById('outprintus');
   printus.appendChild(print);
-
-  /*for (var key in myJson['drinks'][0]) {
-    console.log(key)
-    console.log(myJson['drinks'][0][key])
-
-  }*/
-
-
-
-
-  /*
-    const print = document.getElementById('outprint');
-    h2.appendChild(text);
-    print.appendChild(h2)
-  */
 
 }
 randomDrink();
